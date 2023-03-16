@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_width="wrap_content">
+
+        <EditText
+            android:id="@+id/Edit1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="년도"/>
+
+        <EditText
+            android:id="@+id/Edit2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="몇월"/>
+
+        <EditText
+            android:id="@+id/Edit3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="몇일"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="운동일지"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_height="0dp"
+        android:layout_width="wrap_content"
+        android:layout_weight="1"
+        android:layout_gravity="center">
+
+        <Chronometer
+            android:id="@+id/chronometer1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:format="쉬는 시간 %s "
+            android:textSize="25dp" />
+
+        <Button
+            android:layout_height="40dp"
+            android:layout_width="wrap_content"
+            android:id="@+id/btnStart"
+            android:text="시간(시작)" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:id="@+id/btnEnd"
+            android:text="시간(종료)" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="7"
+        android:orientation="horizontal">
+        <EditText
+            android:id="@+id/edtNameResult"
+            android:gravity="top"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:focusableInTouchMode="false"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:gravity="bottom"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="현재 입력값"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="bottom"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/edt1"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:layout_marginHorizontal="5dp"
+            android:focusableInTouchMode="false"/>
+
+        <EditText
+            android:id="@+id/edt2"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:layout_marginHorizontal="5dp"
+            android:focusableInTouchMode="false"/>
+
+        <EditText
+            android:id="@+id/edt3"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:layout_marginHorizontal="5dp"
+            android:focusableInTouchMode="false"/>
+
+        <EditText
+            android:id="@+id/edt4"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:layout_marginHorizontal="5dp"
+            android:focusableInTouchMode="false"/>
+
+        <EditText
+            android:id="@+id/edt5"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:layout_marginHorizontal="5dp"
+            android:focusableInTouchMode="false"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="bottom"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:layout_marginHorizontal="5dp"
+            android:onClick="CheckboxClick"
+            android:text="종목" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:layout_marginHorizontal="5dp"
+            android:onClick="CheckboxClick1"
+            android:text="세트" />
+
+        <Button
+            android:id="@+id/getBtnWeight"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:layout_marginHorizontal="5dp"
+            android:onClick="CheckboxClick2"
+            android:text="무게" />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:layout_marginHorizontal="5dp"
+            android:onClick="CheckboxClick3"
+            android:text="횟수" />
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:layout_marginHorizontal="5dp"
+            android:onClick="CheckboxClick4"
+            android:text="입력" />
+
+
+    </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>
+

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/DayRecordActivity">
+
+    <RelativeLayout
+        android:id="@+id/CaptureLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <ImageView
+            android:id="@+id/ivDay"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_launcher"
+            />
+        <EditText
+            android:id="@+id/edtdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="50dp"
+            android:focusableInTouchMode="false"/>
+
+        <EditText
+            android:id="@+id/edtresult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusableInTouchMode="false"
+            android:textSize="50dp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btnPicture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SELECT PICTURE"/>
+
+        <Button
+            android:id="@+id/btnDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Date" />
+
+        <Button
+            android:id="@+id/btnEvent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="CheckboxClick"
+            android:layout_gravity="center"
+            android:text="EVENT" />
+
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SAVE"/>
+
+    </LinearLayout>
+
+</LinearLayout>

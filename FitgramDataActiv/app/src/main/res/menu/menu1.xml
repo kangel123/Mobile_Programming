@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/itemMain"
+        android:title="WORK OUT"
+        />
+    <item
+        android:id="@+id/itemRecord"
+        android:title="RECORD">
+        <menu>
+            <item
+                android:id="@+id/itemDay"
+                android:title="DAY_RECORD"/>
+            <item
+                android:id="@+id/itemMonth"
+                android:title="MONTH_RECORD"/>
+        </menu>
+    </item>
+</menu>
